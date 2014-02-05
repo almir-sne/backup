@@ -1,0 +1,12 @@
+Segundo EP - Markov Decision Process (robô que tem sensores e atuadores defeituosos) e iteração por valor: o objetivo desse EP será implementar (em Python) a resolução do problema que vimos nas últimas aulas, ou seja, como programar um robô que conhece o mapa de um labirinto e consegue saber onde ele se encontra, para que esse robô consiga atingir um ponto específico do labirinto, com a ressalva que existe um "ponto proibido" que o robô deve evitar. Cada ação efetuada pelo robô implica em um custo, de forma que o robô será induzido a buscar caminhos tão curtos quanto possível para o alvo, considerando entretanto o risco de cair no "ponto proibido".
+
+A especificação detalhada do problema se encontra no nosso livro texto e a técnica que estudamos e que deve ser usada no EP se chama "iteração de valor".
+
+No site oficial do livro (http://aima.cs.berkeley.edu/) pode ser encontrado um código em Python que resolve o problema conforme descrito no livro. Esse código DEVE ser utilizado como base para resolver o EP. O código que se encontra no site, entretanto, está "hardwired" para o problema e parâmetros descritos no livro.
+
+Nesse EP, seu trabalho será generalizar aquele código, para que alguns valores "hardcoded" se transformem em parâmetros de entrada. Especificamente:
+
+O labirinto deverá ser 5x5. O alvo, "ponto proibido", posição inicial do robô e configuração do labirinto devem ser dados de entrada, obtidos através da leitura de um arquivo-texto, formatado segundo sua preferência.
+Os valores do prêmio por atingir o alvo, punição por atingir o "ponto proibido" e custo de cada movimento do robô devem ser fornecidos como dados de entrada.
+A taxa de falha do robô deve ser fornecida como um conjunto de quatro dados de entrada, da seguinte forma: assumindo que os comandos possam ser N, S, E, W (norte, sul, leste, oeste), quando o comando for, por exemplo, N ("vá para o norte"), teremos a probabilidade de ele ir para N, a probabilidade de ir para S, para E e para W (a soma desses quatro valores, evidentemente, deve dar 100 por cento). Se o comando for E, esses mesmos valores serão rotacionados adequadamente (de maneira similar ao que fizemos em sala de aula).
+Você deve, para um mesmo labirinto e posições do alvo, "ponto proibido" e partida do robô, construir valores de entrada distintos que, quando seu programa for executado, construam políticas de movimentação distintas. Junto com o código de seu programa, você deve entregar um arquivo texto indicando os parâmetros usados e os pontos no mapa onde as diferenças de políticas ocorreram. 

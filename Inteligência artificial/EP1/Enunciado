@@ -1,0 +1,9 @@
+EP1: esse exercício-programa consiste na implementação do algoritmo D*, descrito no artigo de Tony Stentz disponibilizado no site da disciplina.
+
+O algoritmo está descrito detalhadamente, mas ele merece atenção pois é relativamente sofisticado e complicado de implementar. Conforme combinado no início do semestre, a implementação deve ser em Python. Para padronizar ainda mais as soluções, sugiro que todos usem Python 2.x.
+
+O algoritmo deve ser testado em uma grade 16x16, onde seja desenhado um labirinto com paredes verticais e horizontais (como fizemos em aula). O robô deve iniciar em um ponto arbitrário do mapa e o alvo deve ficar em outro ponto arbitrário. Conforme indicado no artigo, o robô terá somente informações parciais a respeito do mapa, e "descobrirá" o mapa à medida que caminhar por ele.
+
+Cada um deve pensar em sua própria solução para representar o mapa e o caminho gerado que resolve o problema: uma matriz quadrada de inteiros, uma quad-tree, 256 variáveis booleanas, um array positrônico fractal plasmódico etc.
+
+A clareza da explicação de como o programa funciona, como se fornecem dados e como se lê a resposta será considerada para determinar a nota de cada exercício. 
